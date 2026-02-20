@@ -6,7 +6,7 @@
 This project simulates the role of a hands-on APM Analyst supporting the Head of Alternative Payment Methods.
 Using:
 -	A transaction-level Excel dataset
--	Two Power BI dashboards (3 analytical pages total)
+-	Power BI dashboards
 - analyzed APM adoption, conversion efficiency, and execution bottlenecks across emerging markets, translating performance data into clear recommendations that support APM strategy, integrations, launches, and optimization initiatives.
 ________________________________________
 
@@ -17,9 +17,9 @@ ________________________________________
 -	Deliver clear, stakeholder-ready insights
 
 # 🛠 Tools & Methods
-•	Excel: Descriptive statistics, validation, aggregation
-•	Power BI: 3-page analytical dashboards
-•	Techniques: Funnel analysis, adoption analysis, failure diagnostics
+-	Excel: Descriptive statistics, validation, aggregation
+-	Power BI
+-	Techniques: Funnel analysis, adoption analysis, failure diagnostics
 ________________________________________
 
 # 📂 Data Overview (Excel Analysis)
@@ -62,7 +62,8 @@ _________________________________
 
 ## Interpretation:
 Authorization is not the limiting factor. Revenue loss occurs after customer commitment, suggesting issues such as confirmation failures, timeout risks, or redirect friction.
-Implication for APM Strategy:
+
+### Implication for APM Strategy:
 This represents the fastest conversion uplift opportunity, as it does not require new markets or payment methods.
 ________________________________________
 
@@ -78,7 +79,8 @@ ________________________________________
 
 ## Interpretation:
 APMs are not underperforming due to lack of customer trust or low usage quality. Performance gaps are systemic and shared across methods.
-Implication for APM Strategy:
+
+### Implication for APM Strategy:
 This validates continued investment in local APMs, especially in low-card-penetration markets.
 ________________________________________
 
@@ -94,7 +96,8 @@ ________________________________________
 
 ## Interpretation:
 Markets are structurally ready for APM usage, but conversion outcomes depend on local execution quality, partner performance, and flow reliability.
-Implication for APM Strategy:
+
+### Implication for APM Strategy:
 Lower-performing markets should be treated as optimization opportunities, not deprioritized regions.
 ________________________________________
 
