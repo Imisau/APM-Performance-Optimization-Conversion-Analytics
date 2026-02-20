@@ -53,6 +53,7 @@ _________________________________
 # 🔹 Page 1: Executive APM Funnel & KPI Overview
 
 **Insight:** Revenue Leakage Occurs After Authorization
+![](https://github.com/Imisau/APM-Performance-Optimization-Conversion-Analytics/blob/main/AMP_PerOpt3.png)
 
 ## What the data shows:
 -	Strong authorization performance
@@ -66,6 +67,7 @@ This represents the fastest conversion uplift opportunity, as it does not requir
 ________________________________________
 
 # 🔹 Page 2: Payment Method Performance & Adoption
+![](https://github.com/Imisau/APM-Performance-Optimization-Conversion-Analytics/blob/main/AMP_PerOpt2.png)
 
 **Insight:** Alternative Payment Methods Perform on Par with Cards
 
@@ -81,6 +83,7 @@ This validates continued investment in local APMs, especially in low-card-penetr
 ________________________________________
 
 # 🔹 Page 3: Market & Failure Pattern Analysis
+![](https://github.com/Imisau/APM-Performance-Optimization-Conversion-Analytics/blob/main/AMP_PerOpt1.png)
 
 **Insight:** Markets Are Ready, Execution Quality Varies
 
@@ -94,35 +97,44 @@ Markets are structurally ready for APM usage, but conversion outcomes depend on 
 Implication for APM Strategy:
 Lower-performing markets should be treated as optimization opportunities, not deprioritized regions.
 ________________________________________
-💡 Key Recommendations (Action-Oriented)
-✅ 1️⃣ Prioritize Post-Authorization Flow Optimization
-•	Focus on confirmation steps, timeout handling, and redirect stability
-•	Even a 1–2% completion uplift translates into material revenue recovery at scale
-Recommendation:
-Initiate a cross-functional review with Product and Engineering to identify friction points after authorization.
-________________________________________
-✅ 2️⃣ Treat USSD & Wallets as Core Strategic APMs
-•	Strong authorization confirms user trust
-•	Performance issues mirror cards, indicating platform-level constraints
-Recommendation:
-Maintain APM parity in optimization roadmaps rather than prioritizing cards over alternative methods.
-________________________________________
-✅ 3️⃣ Apply Market-Specific Execution Improvements
-•	Address latency, partner response timing, and integration robustness in lower-completion markets
-Recommendation:
-Deploy targeted market-level diagnostics instead of global one-size-fits-all fixes.
-________________________________________
-✅ 4️⃣ Reframe APM Optimization as Revenue Protection
-•	Avg transaction ≈ $150
-•	Completion losses represent recoverable revenue, not just operational noise
-Recommendation:
-Position APM improvements internally as direct revenue-impact initiatives, not purely technical enhancements.
-________________________________________
 
-________________________________________
-📌 Conclusion
-This project demonstrates how I would contribute as an APM Analyst at dLocal:
-by combining hands-on analytics, execution-focused insight, and clear stakeholder communication to improve conversion performance across emerging markets.
-The analysis shows that APM performance is fundamentally strong, with customer trust already established. The primary opportunity lies in execution optimization, where targeted improvements can unlock immediate revenue uplift without expanding payment coverage.
-This is exactly the type of work required to scale APMs efficiently, sustainably, and profitably in emerging markets.
+# 💡 Key Recommendations (Action-Oriented)
+
+## ✅ 1️⃣ Prioritize Post-Authorization Flow Optimization
+
+-	Focus on confirmation steps, timeout handling, and redirect stability
+-	Even a 1–2% completion uplift translates into material revenue recovery at scale
+
+### Recommendation:
+Initiate a cross-functional review with Product and Engineering to identify friction points after authorization.
+
+## ✅ 2️⃣ Treat USSD & Wallets as Core Strategic APMs
+
+-	Strong authorization confirms user trust
+-	Performance issues mirror cards, indicating platform-level constraints
+
+### Recommendation:
+Maintain APM parity in optimization roadmaps rather than prioritizing cards over alternative method.
+
+## ✅ 3️⃣ Apply Market-Specific Execution Improvements
+-	Address latency, partner response timing, and integration robustness in lower-completion markets
+
+### Recommendation:
+Deploy targeted market-level diagnostics instead of global one-size-fits-all fixes.
+
+## ✅ 4️⃣ Reframe APM Optimization as Revenue Protection
+-	Avg transaction ≈ $150
+-	Completion losses represent recoverable revenue, not just operational noise
+
+### Recommendation:
+Position APM improvements internally as direct revenue-impact initiatives, not purely technical enhancements.
+
+# 📌 Conclusion
+This analysis demonstrates that APM performance across emerging markets is fundamentally strong, with customer trust already established at the authorization stage.
+The primary limitation to growth is not adoption or payment method viability, but execution efficiency after authorization.
+By focusing on post-authorization optimization, systemic flow improvements, and targeted market-level fixes, dLocal can unlock immediate revenue recovery while strengthening the scalability of its APM platform.
+This is the type of data-driven, execution-focused insight required to scale Alternative Payment Methods sustainably in emerging markets.
+
+Interact With Dataset [Here](https://github.com/Imisau/APM-Performance-Optimization-Conversion-Analytics/blob/main/APM_Performance_Optimization_Portfolio.xlsx)
+
 
