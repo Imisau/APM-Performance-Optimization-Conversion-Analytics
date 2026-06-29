@@ -22,7 +22,7 @@ ________________________________________
 -	Techniques: Funnel analysis, adoption analysis, failure diagnostics
 ________________________________________
 
-# 📂 Data Overview (Excel Analysis)
+# 📂 Data Overview
 ### Dataset Characteristics
 -	Transaction-level APM performance data
 -	Multiple emerging markets
@@ -37,7 +37,7 @@ ________________________________________
 -	Market and payment method dimensions
 ________________________________________
 
-### Overall Funnel Performance (Excel-Derived)
+### Overall Funnel Performance
 |Metric	                     |Value
 :---------------------------:|:---------------------|
 Total Transactions	         |10,000
