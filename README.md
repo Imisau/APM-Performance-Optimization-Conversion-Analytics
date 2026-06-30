@@ -26,6 +26,59 @@ ________________________________________
 
 # 🛠 Tools & Methods
 -	Python: Descriptive statistics, validation, aggregation
+- SQL:
+- SELECT
+    Country,
+    APM_Type,
+    Transaction_Amount_USD,
+    Authorized,
+    Completed,
+    Launch_Cost_USD
+FROM apm_performance;
+- SELECT *
+
+FROM apm_performance
+
+WHERE Country='Nigeria';
+- SELECT *
+
+FROM apm_performance
+
+WHERE Completed=0;
+
+#### - Group BY APM Performance
+- SELECT
+
+APM_Type,
+
+COUNT(*) Transactions,
+
+AVG(Authorized)*100 AuthorizationRate,
+
+AVG(Completed)*100 CompletionRate,
+
+AVG(Transaction_Amount_USD) AvgTransaction
+
+FROM apm_performance
+
+GROUP BY APM_Type;
+
+#### - Country Performance
+
+- SELECT
+
+Country,
+
+COUNT(*) Transactions,
+
+SUM(Transaction_Amount_USD) Revenue,
+
+AVG(Completed)*100 SuccessRate
+
+FROM apm_performance
+
+GROUP BY Country;
+
 
 -	Power BI
 -	Techniques: Funnel analysis, adoption analysis, failure diagnostics
