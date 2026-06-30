@@ -26,7 +26,7 @@ ________________________________________
 
 # 🛠 Tools & Methods
 -	Python: Descriptive statistics, validation, aggregation
-- SQL:
+#### - SQL:
 #### - SELECT
     Country,
     Payment_Method,
@@ -142,10 +142,6 @@ AVG(Completed)*100 CompletionRate
 FROM apm_transactions
 
 GROUP BY Payment_Method;
-
-Stored Procedures
-
-Business Questions
 -	Power BI
 -	Techniques: Funnel analysis, adoption analysis, failure diagnostics
 ________________________________________
@@ -231,33 +227,33 @@ ________________________________________
 
 # 💡 Key Recommendations (Action-Oriented)
 
-## ✅ 1️⃣ Prioritize Post-Authorization Flow Optimization
+#### ✅ 1️⃣ Prioritize Post-Authorization Flow Optimization
 
 -	Focus on confirmation steps, timeout handling, and redirect stability
 -	Even a 1–2% completion uplift translates into material revenue recovery at scale
 
-### Recommendation:
+#### Recommendation:
 Initiate a cross-functional review with Product and Engineering to identify friction points after authorization.
 
-## ✅ 2️⃣ Treat USSD & Wallets as Core Strategic APMs
+#### ✅ 2️⃣ Treat USSD & Wallets as Core Strategic APMs
 
 -	Strong authorization confirms user trust
 -	Performance issues mirror cards, indicating platform-level constraints
 
-### Recommendation:
+#### Recommendation:
 Maintain APM parity in optimization roadmaps rather than prioritizing cards over alternative method.
 
-## ✅ 3️⃣ Apply Market-Specific Execution Improvements
+#### ✅ 3️⃣ Apply Market-Specific Execution Improvements
 -	Address latency, partner response timing, and integration robustness in lower-completion markets
 
-### Recommendation:
+#### Recommendation:
 Deploy targeted market-level diagnostics instead of global one-size-fits-all fixes.
 
-## ✅ 4️⃣ Reframe APM Optimization as Revenue Protection
+#### ✅ 4️⃣ Reframe APM Optimization as Revenue Protection
 -	Avg transaction ≈ $150
 -	Completion losses represent recoverable revenue, not just operational noise
 
-### Recommendation:
+#### Recommendation:
 Position APM improvements internally as direct revenue-impact initiatives, not purely technical enhancements.
 
 # 📌 Conclusion
