@@ -1,23 +1,151 @@
 # APM-Performance-Optimization-Conversion-Analytics
 ![](https://github.com/Imisau/APM-Performance-Optimization-Conversion-Analytics/blob/main/Hero-Image-1.png)
-### Emerging Markets | Power BI (3 Pages) | Excel-Based Analysis
+### Emerging Markets | Power BI (3 Pages) | SQL, Python-Based Analysis
 
-# 🚀 Project Context
+# 🚀 Introduction
 This project simulates the role of a hands-on APM Analyst supporting the Head of Alternative Payment Methods.
 Using:
--	A transaction-level Excel dataset
+-	A transaction-level CSV dataset
 -	Power BI dashboards
 - analyzed APM adoption, conversion efficiency, and execution bottlenecks across emerging markets, translating performance data into clear recommendations that support APM strategy, integrations, launches, and optimization initiatives.
 ________________________________________
 
-# 🎯 Business Objectives
+# 🎯 Problem Statement
+- Merchants operating across emerging markets experience revenue leakage due to failed payment transactions after authorization. This   project analyzes 10,000 payment transactions to identify conversion bottlenecks and recommend strategies to improve Alternative Payment Method (APM) performance.
+### Business Objectives
 -	Improve APM adoption and conversion
 -	Identify revenue leakage across the payment funnel
 -	Support execution of APM improvements
 -	Deliver clear, stakeholder-ready insights
+  
+# 🎯 Business Impact
+- Identified a 7% revenue leakage after authorization
+- Discovered a 1–2% conversion recovery opportunity
+- Evaluated 10,000 payment transactions
+- Developed executive dashboards for operational monitoring
 
 # 🛠 Tools & Methods
--	Excel: Descriptive statistics, validation, aggregation
+-	Python: Descriptive statistics, validation, aggregation
+- SQL:
+#### - SELECT
+    Country,
+    Payment_Method,
+    Transaction_Amount_USD,
+    Authorized,
+    Completed
+FROM apm_transactions;
+
+#### - GROUP BY
+SELECT
+    Payment_Method,
+    COUNT(*) AS Transactions,
+    AVG(Authorized) * 100 AS Authorization_Rate,
+    AVG(Completed) * 100 AS Completion_Rate
+FROM apm_transactions
+GROUP BY Payment_Method;
+
+SELECT
+    Country,
+    COUNT(*) Transactions,
+    SUM(Transaction_Amount_USD) Revenue
+FROM apm_transactions
+GROUP BY Country;
+
+#### 1 CASE
+CASE
+SELECT
+
+Country,
+CASE
+    WHEN Transaction_Amount_USD >=150
+        THEN 'High Value'
+
+    ELSE 'Standard'
+END AS Transaction_Category
+
+FROM apm_transactions;
+
+#### - 2 CASE
+CASE
+
+WHEN Authorized=1
+AND Completed=1
+
+THEN 'Successful'
+
+WHEN Authorized=1
+AND Completed=0
+
+THEN 'Post-Authorization Failure'
+
+ELSE 'Authorization Failure'
+
+END
+
+#### - CTEs
+WITH Funnel AS
+
+(
+
+SELECT
+
+COUNT(*) Attempts,
+
+SUM(Authorized) Authorized,
+
+SUM(Completed) Completed
+
+FROM apm_transactions
+
+)
+
+SELECT *
+
+FROM Funnel;
+
+#### - Window Functions
+SELECT
+
+Country,
+
+SUM(Transaction_Amount_USD) Revenue,
+
+RANK() OVER
+
+(
+
+ORDER BY SUM(Transaction_Amount_USD) DESC
+
+) Revenue_Rank
+
+FROM apm_transactions
+
+GROUP BY Country;
+
+ROW_NUMBER()
+
+OVER(PARTITION BY Country)
+
+#### Views
+CREATE VIEW vw_APM_KPIs AS
+
+SELECT
+
+Payment_Method,
+
+COUNT(*) Transactions,
+
+AVG(Authorized)*100 AuthorizationRate,
+
+AVG(Completed)*100 CompletionRate
+
+FROM apm_transactions
+
+GROUP BY Payment_Method;
+
+Stored Procedures
+
+Business Questions
 -	Power BI
 -	Techniques: Funnel analysis, adoption analysis, failure diagnostics
 ________________________________________
@@ -135,7 +263,7 @@ Position APM improvements internally as direct revenue-impact initiatives, not p
 # 📌 Conclusion
 This analysis demonstrates that APM performance across emerging markets is fundamentally strong, with customer trust already established at the authorization stage.
 The primary limitation to growth is not adoption or payment method viability, but execution efficiency after authorization.
-By focusing on post-authorization optimization, systemic flow improvements, and targeted market-level fixes, dLocal can unlock immediate revenue recovery while strengthening the scalability of its APM platform.
+By focusing on post-authorization optimization, systemic flow improvements, and targeted market-level fixes, you can unlock immediate revenue recovery while strengthening the scalability of its APM platform.
 This is the type of data-driven, execution-focused insight required to scale Alternative Payment Methods sustainably in emerging markets.
 
 Interact With Dataset [Here](https://github.com/Imisau/APM-Performance-Optimization-Conversion-Analytics/blob/main/APM_Performance_Optimization_Portfolio.xlsx)
