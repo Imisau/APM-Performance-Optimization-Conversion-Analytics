@@ -30,11 +30,17 @@ ________________________________________
 
 SELECT
     Country,
+    
     APM_Type,
+    
     Transaction_Amount_USD,
+    
     Authorized,
+    
     Completed,
+    
     Launch_Cost_USD
+
 FROM apm_performance;
 
  SELECT *
