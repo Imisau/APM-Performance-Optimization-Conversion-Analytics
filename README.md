@@ -27,7 +27,8 @@ ________________________________________
 # 🛠 Tools & Methods
 -	Python: Descriptive statistics, validation, aggregation
 - SQL:
-- SELECT
+
+SELECT
     Country,
     APM_Type,
     Transaction_Amount_USD,
@@ -35,12 +36,14 @@ ________________________________________
     Completed,
     Launch_Cost_USD
 FROM apm_performance;
-- SELECT *
+
+ SELECT *
 
 FROM apm_performance
 
 WHERE Country='Nigeria';
-- SELECT *
+
+SELECT *
 
 FROM apm_performance
 
